@@ -11,6 +11,9 @@ jobs:
       - name: Checkout project
         uses: actions/checkout@v4
 
+      - name: Unzip app folder
+        run: unzip -o app.zip
+
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
